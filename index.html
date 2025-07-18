@@ -8,14 +8,17 @@
             background-color: antiquewhite;
             font-family: Arial, sans-serif;
             font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2 {
+            text-align: center;
         }
         h1 {
             font-size: 24px;
-            text-align: center;
         }
         h2 {
             font-size: 20px;
-            text-align: center;
         }
         .productos {
             display: flex;
@@ -29,6 +32,7 @@
             padding: 10px;
             width: 400px;
             text-align: center;
+            background-color: white;
         }
         table {
             margin: 30px auto;
@@ -52,91 +56,115 @@
         .nav-button:hover {
             background-color: #ff1493;
         }
+        .center {
+            text-align: center;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
 
-    <h1>LA MICHOACANA</h1>
+    <header>
+        <h1>LA MICHOACANA</h1>
+    </header>
 
-    <center>
-        <video width="640" height="480" controls>
-            <source src="video.mp4" type="video/mp4">
-        </video>
-    </center>
+    <main>
 
-    <section>
-        <div class="productos">
-            <div class="producto">
-                <h3>PALETAS DE HIELO</h3>
-                <p>Crema de leche y agua</p>
-                <p>Precio: $20.00 - $40.00</p>
-                <img src="producto1.jpeg" width="380" height="380">
-            </div>
-            <div class="producto">
-                <h3>HELADOS</h3>
-                <p>Helados de agua y de crema de leche</p>
-                <p>Precio: $35.00 - $70.00</p>
-                <img src="producto2.jpeg" alt="Producto2" width="380" height="380">
-            </div>
+        <div class="center">
+            <video width="640" height="480" controls>
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
         </div>
-    </section>
 
-    <section>
-        <h2>AGUAS DE CREMA</h2>
-        <div class="productos">
-            <div class="producto">
-                <p>Aguas de crema de leche</p>
-                <p>Precio: $34.00 - $78.00</p>
-                <a href="producto3.jpeg"><img src="producto3.jpeg" alt="Producto3" width="380" height="380"></a>
+        <section>
+            <div class="productos">
+                <div class="producto">
+                    <h3>PALETAS DE HIELO</h3>
+                    <p>Crema de leche y agua</p>
+                    <p>Precio: $20.00 - $40.00</p>
+                    <img src="producto1.jpeg" alt="Paletas de hielo" width="380" height="380">
+                </div>
+                <div class="producto">
+                    <h3>HELADOS</h3>
+                    <p>Helados de agua y de crema de leche</p>
+                    <p>Precio: $35.00 - $70.00</p>
+                    <img src="producto2.jpeg" alt="Helados" width="380" height="380">
+                </div>
             </div>
-            <div class="producto">
-                <h3>TOPPING</h3>
-                <p>Descubre la nueva actualización de topping</p>
-                <p>Precio: +$20.00</p>
-                <a href="producto4.jpeg"><img src="producto4.jpeg" alt="Producto4" width="380" height="380"></a>
+        </section>
+
+        <section>
+            <h2>AGUAS DE CREMA</h2>
+            <div class="productos">
+                <div class="producto">
+                    <p>Aguas de crema de leche</p>
+                    <p>Precio: $34.00 - $78.00</p>
+                    <a href="producto3.jpeg">
+                        <img src="producto3.jpeg" alt="Aguas de crema" width="380" height="380">
+                    </a>
+                </div>
+                <div class="producto">
+                    <h3>TOPPING</h3>
+                    <p>Descubre la nueva actualización de topping</p>
+                    <p>Precio: +$20.00</p>
+                    <a href="producto4.jpeg">
+                        <img src="producto4.jpeg" alt="Topping" width="380" height="380">
+                    </a>
+                </div>
             </div>
+        </section>
+
+        <section>
+            <h2>Promociones de la semana</h2>
+            <div class="productos">
+                <div class="producto">
+                    <p>Haz clic en la imagen para ver las promociones</p>
+                    <a href="producto5.jpeg">
+                        <img src="producto5.jpeg" alt="Promociones" width="380" height="380">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="center">
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Tu navegador no soporta el audio.
+            </audio>
         </div>
-    </section>
 
-    <section>
-        <h2>Promociones de la semana</h2>
-        <div class="productos">
-            <div class="producto">
-                <p>Haz clic en la imagen para ver las promociones</p>
-                <a href="producto5.jpeg"><img src="producto5.jpeg" alt="Producto5" width="380" height="380"></a>
-            </div>
+        <div class="center">
+            <a href="https://youtu.be/TgFvQuFVBmA?si=_6Xtqocd-MX8N8ww" target="_blank" rel="noopener noreferrer">
+                Conoce nuestra historia
+            </a>
         </div>
-    </section>
 
-    <center>
-        <audio controls>
-            <source src="audio.mp3" type="audio/mpeg">
-        </audio>
-    </center>
+        <div class="center">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Norma Nayeli</td>
+                        <td>Bautista Martínez</td>
+                    </tr>
+                    <tr>
+                        <td>Ruben</td>
+                        <td>Arellano Izalde</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <center>
-        <a href="https://youtu.be/TgFvQuFVBmA?si=_6Xtqocd-MX8N8ww">Conoce nuestra historia</a>
-    </center>
+        <!-- BOTÓN PARA IR AL FORMULARIO -->
+        <a href="formulario.html" class="nav-button">Registrarse</a>
 
-    <center>
-        <table>
-            <tr>
-                <th>Nombre</th>
-                <th>Apellido</th>
-            </tr>
-            <tr>
-                <td>Norma Nayeli</td>
-                <td>Bautista Martínez</td>
-            </tr>
-            <tr>
-                <td>Ruben</td>
-                <td>Arellano Izalde</td>
-            </tr>
-        </table>
-    </center>
-
-    <!-- BOTÓN PARA IR AL FORMULARIO -->
-    <a href="formulario.html" class="nav-button">Registrarse</a>
+    </main>
 
 </body>
 </html>
